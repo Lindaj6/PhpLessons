@@ -13,6 +13,8 @@
     <?php 
     $name = $_GET['person'];
     echo $name. " is tired.";
+    print " from";
+    echo 10+4;
     ?>
 </body>
 </html>
