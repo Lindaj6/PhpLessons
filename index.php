@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+<a class="nav-link active" href="functions.php">
+function
+</a>
     <form method= "GET">
         <input type="text" name="person">
         <button> SUBMIT </button>
@@ -15,6 +18,7 @@
     echo $name. " is tired.";
     print " from";
     echo 10+4;*/
+    echo str_replace ("ah","ha","HEHE ah",);
     ?>
 </body>
 </html>
