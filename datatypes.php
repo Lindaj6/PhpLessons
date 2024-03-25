@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-<a class="nav-link active" href="functions.php">
-Index
+<a class="nav-link active" href="operators.php">
+operators
 </a>
     <?php
 
