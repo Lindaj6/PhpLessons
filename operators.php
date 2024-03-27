@@ -6,12 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-<a class="nav-link active" href="functions.php">
-Index
+<a class="nav-link active" href="conditionals.php">
+conditionals
 </a>
 <?php
     //Arithmetic Operators 
     echo 12**2;
+    echo 2+4;
+    echo 2/4;
 ?>
 
 <?php
