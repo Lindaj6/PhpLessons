@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+<a class="nav-link active" href="calendar.php">
+calendar
+</a>
 <form>
 <input type="text" name="num1" placeholder="Number 1">
 <input type="text" name="num2" placeholder="Number 2">
