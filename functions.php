@@ -9,8 +9,25 @@
 <a class="nav-link active" href="datatypes.php">
 datatypes
 </a>
-    <?php
+<?php
     echo str_replace ("Linda","Emily","Linda is tired")
-    ?>
+?>
+
+<br>
+
+<?php
+
+function newCalc($x) {
+    $newnr = $x * 0.25;
+    echo "Here is 25% of what you wrote: ".$newnr;
+}
+$x = 200;
+newCalc($x);
+
+echo "<br>";
+
+$a = 500;
+newCalc($a);
+?>
 </body>
 </html>
