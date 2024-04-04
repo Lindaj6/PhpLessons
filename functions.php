@@ -1,15 +1,6 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="style.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-  <a class="nav-link active" href="datatypes.php">
-datatypes
-</a>
+<?php
+include 'include/header.php';
+?>
 <?php
     echo str_replace ("Linda","Emily","Linda is tired")
 ?>
