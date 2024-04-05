@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="mynav">
+  <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
@@ -41,3 +41,4 @@
     </div>
   </div>
 </nav>
+</div>
