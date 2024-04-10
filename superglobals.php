@@ -12,6 +12,9 @@
 include 'include/header.php';
 ?>
 <?php
+/*$_COOKIE
+$_SESSION
+*/
 setcookie("name","Linda", time() + 172800);
 
 $_SESSION['name'] = "2024";
