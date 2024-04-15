@@ -1,0 +1,12 @@
+create table posts (
+	id int(8) not null PRIMARY KEY AUTO_INCREMENT,
+    subject varchar(128) not null,
+    content varchar(2024) not null,	
+    date datetime not null,	
+    );
+    insert into posts (username,password) VALUES ('Coding 2', 'Learning SQL and PHP' );
+insert into posts (username,password) VALUES ('US Government and Civics', 'Learning about US Government' );
+insert into posts (username,password) VALUES ('General Music', 'Studying of music during different time period' );
+UPDATE posts
+SET subject = '', content= ''
+WHERE id = '2'
