@@ -1,3 +1,6 @@
+<?php 
+   include_once 'include/connection.php';
+   ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,6 +25,17 @@ include 'include/header.php';
     echo 10+4;*/
     echo str_replace ("ah","ha","HEHE ah",);
     ?>
+<?php
+    $sql = "SELECT * FROM users;";
+    $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows ($result);
+    if($resultCheck > 0){
+while ($row = mysqli_fetch_assoc($result)){
+  echo $row['user_uid'];
+
+        }
+    }
+?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

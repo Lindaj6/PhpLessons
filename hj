@@ -10,3 +10,4 @@ insert into posts (username,password) VALUES ('General Music', 'Studying of musi
 UPDATE posts
 SET subject = '', content= ''
 WHERE id = '2'
+INSERT INTO users (user first, user_last, user_email, user_uid, user_pwd) VALUES ('Linda', 'Jiang', 'linda.jiang@students.jmcss.org", 'Admin', 'test123');
