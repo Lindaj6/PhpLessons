@@ -10,4 +10,10 @@ insert into posts (username,password) VALUES ('General Music', 'Studying of musi
 UPDATE posts
 SET subject = '', content= ''
 WHERE id = '2'
-INSERT INTO users (user first, user_last, user_email, user_uid, user_pwd) VALUES ('Linda', 'Jiang', 'linda.jiang@students.jmcss.org", 'Admin', 'test123');
+  include 'include/connection.php';
+   $first = $_POST['first'];
+   $last = $_POST['last']; 
+   $email = $_POST['email']; 
+   $uid = $_POST['uid'];
+   $pwd = $_POST['pwd'];
+INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) VALUES ('Linda', 'Jiang', 'linda.jiang@students.jmcss.org', 'Admin', 'test123');

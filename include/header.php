@@ -32,6 +32,9 @@
         <li class="nav-item">
           <a class="nav-link" href="superglobals.php">Superglobals</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="contact.php">contact</a>
+        </li>
       </ul>
     </div>
   </div>
