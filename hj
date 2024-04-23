@@ -19,4 +19,4 @@ WHERE id = '2'
 INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) 
 VALUES ('Linda', 'Jiang', 'linda.jiang@students.jmcss.org', 'Admin', 'test123');
 
-12:03
+36.25
