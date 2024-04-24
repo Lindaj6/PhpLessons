@@ -5,11 +5,11 @@ require "head1.php";
     <div class="wrapper-main">
      <section class="section-default">
         <h1>Signup</h1>
-        <form action="includes/signup.inc.php" method="post">
+        <form action="include/signup.inc.php" method="post">
             <input type="text" name="uid" placeholder="Username">       
             <input type="text" name="mail" placeholder="E-mail">
             <input type="password" name="pwd" placeholder="Password">
-            <input type="password" name="upwd-repeat" placeholder="Repeat password">
+            <input type="password" name="pwd-repeat" placeholder="Repeat password">
             <button type="submit" name="sign-submit">Signup</button>
 </form>
 </section>
