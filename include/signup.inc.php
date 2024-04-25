@@ -29,7 +29,7 @@ if (isset($_POST['signup-submit'])){
     }
     else {
         $sql ="SELECT uidUsers FROM users WHERE uidUsers=?";
-        $stmt = mysqli_stmt _init($conn);
+        $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)){
             header("Location: ../signup.php?error=sqlerror");
             exit();
@@ -38,11 +38,36 @@ if (isset($_POST['signup-submit'])){
             mysqli_stmt_bind_param($stmt, "s", $username);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
+        if ($resultCheck > 0 ) {
+            header("Location: ../signup.php?error=usertaken");
+            exit();
+        }
+        else {
+            $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
+    $stmt = mysli_stmt_init($conn);
+    if (!mysqil_stmt_prepare($stmt, $sql)){
+        header("Location: ../signup.php?error=sqlerror");
+        exit();
+    }
+    else {
+        $hashedPwd = password_hash($password, PASSWPRD_DEFAULT );
+        mysqli_stmt_bind_param($stmt, "sss", $username, $email, $password);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_store_resilt($stmt);
+       header("Location: ../signup.php?signup=success");
+    exit();
+        }
         }
         
 
     }
 
-
+}
+mysqi_stmt_close($stmt);
+mysqil_close($conn);
+}
+else{
+    header("Location: ../signup.php");
+    exit();
 }
     
