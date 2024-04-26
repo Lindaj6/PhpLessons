@@ -8,6 +8,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
+    <a class="header-logo" href="index.php">
+                <img src="logo.png" alt="logo">
+            </a>
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="index.php">Index</a>
@@ -54,3 +57,19 @@ else{
   echo "Logged in";
 }
 ?>
+<div class="header-login">
+            <?php if (isset ($_SESSION['userId'])){
+    echo '<form action="include/login.inc.php" method="post">
+    <button type="submit" name="logout-submit">Logout</button>
+</form>';
+    }
+    else {
+  echo '<form action="include.login.inc.php" method="post">
+  <input type="text" name="mailuid" placeholder="Username/E-mail...">
+  <input type="password" name="pwd" placeholder="Password...">
+  <button type="submit" name="login-submit">Login</button>
+</form>
+   <a href="signup.php">Signup</a>';
+     }
+?>
+            </div>

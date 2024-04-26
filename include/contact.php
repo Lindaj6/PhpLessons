@@ -1,5 +1,5 @@
 <?php 
-include_once 'connection.php';
+includes_once 'connection.php';
 $first = $_POST['first'];
 $last = $_POST['last']; 
 $email = $_POST['email']; 
