@@ -9,7 +9,7 @@
   </head>
   <body>
     <?php
-require "head1.php";
+include 'includes/header.php';
 ?>
 <main>
     <div class="wrapper-main">
@@ -39,13 +39,14 @@ else if ($_GET['signup'] =="success"){
     echo '<p class="signupsuccess">Signup successful!</p>'
 }
 ?>
-        <form action="include/signup.inc.php" method="post">
-            <input type="text" name="uid" placeholder="Username">       
+  
+        <form action="includes/sign.inc.php" method="post">
+            <input type="text" name="uid" placeholder="Username">
             <input type="text" name="mail" placeholder="E-mail">
             <input type="password" name="pwd" placeholder="Password">
-            <input type="password" name="pwd-repeat" placeholder="Repeat password">
-            <button type="submit" name="sign-submit">Signup</button>
-</form>
+            <input type="password" name="pwd-repeat" placeholder="Repeat Password">
+            <button type="submit" name="signup-submit">Sign Up</button>
+        </form>
 </section>
     </div>
 
