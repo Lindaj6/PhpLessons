@@ -44,18 +44,19 @@
         </li>
       </ul>
     <div class="header-login">
-            <?php if (isset ($_SESSION['userId'])){
-    echo '<form action="include/login.inc.php" method="post">
+            <?php 
+               if (isset ($_SESSION['userId'])){
+    echo '<form action="include/logout.inc.php" method="post">
     <button type="submit" name="logout-submit">Logout</button>
 </form>';
     }
     else {
-  echo '<form action="include.login.inc.php" method="post">
-  <input type="text" name="mailuid" placeholder="Username/E-mail...">
-  <input type="password" name="pwd" placeholder="Password...">
+  echo '<form action="include/login.inc.php" method="post">
+  <input type="text" name="mailuid" placeholder="E-mail/Username">
+  <input type="password" name="pwd" placeholder="Password">
   <button type="submit" name="login-submit">Login</button>
 </form>
-   <a href="signup.php">Signup</a>';
+   <a href="signup.php" class="header-signup">Signup</a>';
      }
 ?>
             </div>
