@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <?php
-include 'includes/header.php';
+  <?php 
+require "include/header.php";
 ?>
 <main>
     <div class="wrapper-main">
@@ -40,12 +40,12 @@ else if ($_GET['signup'] =="success"){
 }
 ?>
   
-        <form action="includes/sign.inc.php" method="post">
+        <form action="include/signup.inc.php" method="post">
             <input type="text" name="uid" placeholder="Username">
             <input type="text" name="mail" placeholder="E-mail">
             <input type="password" name="pwd" placeholder="Password">
             <input type="password" name="pwd-repeat" placeholder="Repeat Password">
-            <button type="submit" name="signup-submit">Sign Up</button>
+            <button type="submit" name="signup-submit">Signup</button>
         </form>
 </section>
     </div>
@@ -54,5 +54,4 @@ else if ($_GET['signup'] =="success"){
 <?php
 require "footer.php";
 ?>
-</body>
-</html>
+

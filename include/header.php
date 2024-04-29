@@ -2,6 +2,7 @@
    <?php
    session_start();
    ?>
+   <header>
    <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,22 +43,7 @@
           <a class="nav-link" aria-current="page" href="contact.php">contact</a>
         </li>
       </ul>
-    </div>
-  </div>
-</nav>
-<?php
-$_SESSION ['username'] = "Jian24Lg";
-echo $_SESSION ['username'];
-
-
-if (!isset($_SESSION ['username'])) {
-    echo "Signned out";
-}
-else{
-  echo "Logged in";
-}
-?>
-<div class="header-login">
+    <div class="header-login">
             <?php if (isset ($_SESSION['userId'])){
     echo '<form action="include/login.inc.php" method="post">
     <button type="submit" name="logout-submit">Logout</button>
@@ -73,3 +59,20 @@ else{
      }
 ?>
             </div>
+  </div>
+  </div>
+</nav>
+
+<?php
+$_SESSION ['username'] = "Jian24Lg";
+echo $_SESSION ['username'];
+
+
+if (!isset($_SESSION ['username'])) {
+    echo "Signned out";
+}
+else{
+  echo "Logged in";
+}
+?>
+
