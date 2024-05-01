@@ -19,4 +19,6 @@ WHERE id = '2'
 INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) 
 VALUES ('Linda', 'Jiang', 'linda.jiang@students.jmcss.org', 'Admin', 'test123');
 
-1:13.40
+else if ($_GET["signup"] == "success"){
+    echo '<p class="signupsuccess">Signup successful!</p>'
+}
